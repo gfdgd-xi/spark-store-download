@@ -1,0 +1,16 @@
+{
+    "Name": "UEngine 运行器 1.6.2",
+    "Version": "1.6.2-1",
+    "Filename": "com.gitee.uengine.runner.spark_1.6.2-1_all.deb",
+    "Torrent_address": "com.gitee.uengine.runner.spark_1.6.2-1_all.deb.torrent",
+    "Pkgname": "com.gitee.uengine.runner.spark",
+    "Author": "gfdgd xi",
+    "Contributor": "gfdgd xi",
+    "Website": "https://gitee.com/gfdgd-xi/uengine-runner",
+    "Update": "2022-06-22 11:35:20",
+    "Size": "1.23 MB",
+    "More": "此为UOS打包标准，支持从老标准升级！！！ \n\n※1、优化了 UEngine 运行器的英语翻译 \n※2、新增加了可以打开或关闭第三方应用安装的功能（使用此功能后在UEngine里可以使用默认的APK安装程序安装应用，此操作需要使用程序的Adb补丁） \n※3、新增加了 UEngine 的 Ubuntu 安装程序 \n※4、双包合一，只保留了UOS打包标准，可以从旧标准无缝升级（推荐使用本程序的升级程序进行升级） \n5、修复了本程序在 Ubuntu 上安装和卸载报错而无法继续的问题 \n6、优化帮助/关于窗口在高分辨率电脑上显示不全的问题",
+    "Tags": "community;ubuntu;deepin;uos",
+    "img_urls": "[\"https://examine-spark.oss-cn-shanghai.aliyuncs.com/images/2022/06/22/5664f9c0-f1dc-11ec-9089-b7b4a6ff218e.png\"]",
+    "icons": "https://examine-spark.oss-cn-shanghai.aliyuncs.com/icons/2022/06/22/514aabb0-f1dc-11ec-9089-b7b4a6ff218e.png"
+}
