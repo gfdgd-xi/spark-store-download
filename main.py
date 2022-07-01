@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ##########################################
-# 星火应用商店下载量统计功能
+# 星火应用商店下载量统计功能（基于 Python 制作）
 # 作者：gfdgd xi、为什么您不喜欢熊出没和阿布
 # 版本：1.0
 # 更新时间：2022年07月01日（期末考试完了！！！）
@@ -27,11 +27,11 @@ import tornado.ioloop
 ###############
 # deb 仓库本地地址
 packagePath = "/home/gfdgd_xi/Desktop/spark-download"
-# 端口号
+# 本程序启动后调用的端口号
 post = 8000
 # 启动/关闭防单 IP 高刷功能
 stopConnectOften = True
-# IP 黑名单清理时间（永不清理可以设置为负数）
+# IP 黑名单清理时间（永不清理可以设置为负数），单位为秒
 cleanTimeSet = 60 * 60
 # 最大访问值
 max_post = 30
@@ -39,9 +39,10 @@ max_post = 30
 unableUseIpListSave = True
 # IP 单一时间访问太大自动保存本地的值
 unableUseIP = 100
-# 调试模式（未实现）
+# 调试模式（开启之后会在返回的 Json 显示详细的报错，如果不是测试建议不要使用）
 debug = False
-
+# 调用的路径（从“/”根目录出发）
+path = "/"
 
 ###############
 # 非参数设置，请勿乱动
@@ -189,7 +190,7 @@ if __name__ == "__main__":
         threading.Thread(target=Clean).start()
     # 开启监听
     app = tornado.web.Application([
-        (r"/", Save)
+        (path, Save)
     ])
     app.listen(post)
     tornado.ioloop.IOLoop.current().start()
